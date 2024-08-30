@@ -1,0 +1,50 @@
+include ../mixin/energy-content
+// 메인 레이아웃
+.main-container
+    //왼쪽 메뉴
+    .sidebar
+        .sidebar__title
+            i.fa-solid.fa-chart-line
+            span &nbsp
+            div Solutions
+        ul.menu
+            li.menu__item
+                a.menu__title 
+                    | 전력예측 솔루션
+                    i.fa-solid.fa-chevron-down
+                ul.submenu
+                    li
+                        a(href="/energy/elec/e1") 
+                            i.fa-solid.fa-circle
+                            | 단기예측
+                    li
+                        a(href="/energy/elec/e2")
+                            i.fa-solid.fa-circle
+                            | 장기예측
+            li.menu__item
+                a.menu__title 
+                    | 천연가스예측 솔루션
+                    i.fa-solid.fa-chevron-down
+                ul.submenu
+                    li
+                        a(href="/energy/gas/g1") 
+                            i.fa-solid.fa-circle
+                            | Component1
+                    li
+                        a(href="/energy/gas/g2")
+                            i.fa-solid.fa-circle
+                            | Component2
+            li.menu__item
+                a.menu__title 
+                    | 유가예측 솔루션
+                    i.fa-solid.fa-chevron-down
+                ul.submenu
+                    li
+                        a(href="/energy/commodity/c1")
+                            i.fa-solid.fa-circle
+                            | Component1
+                    li
+                        a(href="/energy/commodity/c2")
+                            i.fa-solid.fa-circle
+                            | Component2
+    +forecastContent(graphContent, performanceContent)

@@ -1,0 +1,25 @@
+mixin forecastContent(graphContent, performanceContent)
+    .forecast-container
+        .forecast-container__title
+            i.fa-solid.fa-square
+            span
+                if activateForecast === "e1"
+                    | 전력단기예측
+                else if activateForecast === "e2"
+                    | 태양광예측
+                else if activateForecast === "g1"
+                    | 천연가스 단기예측
+                else if activateForecast === "g2"
+                    | 천연가스 장기예측
+                else if activateForecast === "c1"
+                    | 유가예측1
+                else if activateForecast === "c2"
+                    | 유가예측2
+        .forecast-container__content
+            .forecast-graph
+                if graphContent.startsWith('data:image') || graphContent.startsWith('/static/images')
+                    img(src=graphContent, alt="Forecast Graph")
+                else
+                    != graphContent
+            .forecast-performance
+                | #{performanceContent}

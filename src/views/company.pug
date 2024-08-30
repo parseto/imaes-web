@@ -1,0 +1,89 @@
+extends base
+block content
+    main.company
+        .company-header__main 
+            div 에너지를 통해 세상의 미래를 밝힙니다.
+                .company-header__sub
+                    | 에너지를 통해 연결된 오늘의 세상, 
+                    br
+                    | 이 세상을 밝혀나가는 등대가 되고자 합니다.
+            .scroll-down-btn
+                i.fa-solid.fa-chevron-down 
+
+        .company-big-container
+            .company-container
+                .company-box
+                    .company__title Vision
+                    .company__sub 
+                        | AI 및 Econometrics를 이용한 혁신적인 솔루션을 통해
+                        br
+                        | 정확한 에너지 예측을 하여 보다 나은 에너지 시장을 만들어갑니다.
+                    .company__image
+                        div
+                
+                .company-box
+                    .company__title Team
+                    .company__sub
+                        | 에너지 분야에서의 다양한 경험을 기반으로,
+                        br
+                        | 최고의 솔루션을 제공할 것을 약속드립니다.
+                    .company__introduce
+                        .company__introduce-card
+                            .card__content
+                                .card__image
+                                    img(src="../../images/imaes-jyp.jpg")
+                                .card__name 박준용
+                                .card__title CEO
+                                .card__introduce 박교수님 소개란
+                                // 너무 길어지면 버튼 눌러서 소개 나오게 하면 될 것 같은데?
+                        .company__introduce-card
+                            .card__content
+                                .card__image
+                                    img(src="../../images/imaes-kcs.jpg")
+                                .card__name 김창식
+                                .card__title 직책을 뭘로?
+                                .card__introduce 김교수님 소개란
+                        .company__introduce-card
+                            .card__content
+                                .card__image
+                                    img(src="../../images/imaes-cyo.jpg")
+                                .card__name 최용옥
+                                .card__title 직책을 뭘로?
+                                .card__introduce 최교수님 소개란
+                        .company__introduce-card
+                            .card__content
+                                .card__image
+                                    img(src="../../images/imaes-lmh.jpg")
+                                .card__name 이민호
+                                .card__title 직책을 뭘로?
+                                .card__introduce 이민호 소개란
+                        .company__introduce-card
+                            .card__content
+                                .card__image
+                                    img(src="../../images/imaes-card.jpg")
+                                .card__name 신학림
+                                .card__title 직책을 뭘로?
+                                .card__introduce 신학림 소개란
+                        .company__introduce-card
+                            .card__content
+                                .card__image
+                                    img(src="../../images/imaes-card.jpg")
+                                .card__name 양성원
+                                .card__title 직책을 뭘로?
+                                .card__introduce 양성원 소개란
+
+        .company-big-container
+            .company-container
+                .company-box
+                    .company__title History
+                    .company__sub 에너지 시장과 함께 성장해나가고 있습니다.
+                .company-history-container
+                    ul.company-history
+                        li.year 2023
+                    ul.history-rows
+                        span.month 01
+                        span.description description test
+
+
+block scripts
+    script(type="module" src="/client/js/views/company.js")

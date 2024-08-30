@@ -1,0 +1,54 @@
+.fourth-block {
+  //   border: solid 3px white;
+  height: 600px;
+  background-image: url("../../images/imaes-contact.jpg");
+  border-radius: 30px;
+  background-position: -25% 50%;
+  position: relative;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+}
+
+.fourth-block__left,
+.fourth-block__right {
+  position: relative;
+  z-index: 2;
+  color: white;
+  padding-top: 60px;
+  padding-left: 40px;
+}
+
+.fourth-block__left {
+  grid-column: 1;
+}
+
+.fourth-block__right {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  grid-column: 2;
+
+  .contact-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 80px;
+  }
+
+  .contact-content {
+    font-size: 36px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+}

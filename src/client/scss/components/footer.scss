@@ -1,0 +1,13 @@
+@import "../config/_variables.scss";
+
+footer {
+  height: 5rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: $imaes-gray-color;
+  text-align: left;
+  padding-top: 20px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}

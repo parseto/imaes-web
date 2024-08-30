@@ -1,0 +1,199 @@
+.company {
+  min-height: calc(500vh - 5rem);
+  width: 100%;
+}
+
+.company-header__main {
+  height: 100vh;
+  // width: 100%;
+  background-image: url("../../images/imaes-company.jpg");
+  background-size: cover;
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+.company-header__sub {
+  font-size: 24px;
+  color: white;
+  // width: 100%;
+  margin-top: 50px;
+  line-height: 2;
+  text-align: center;
+}
+
+.company-big-container {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  justify-content: center;
+}
+
+.company-container {
+  width: 65%;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.company-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.company__title {
+  padding: 200px 60px 60px 60px;
+}
+
+.company__sub {
+  color: $imaes-dark-color;
+  font-size: 24px;
+  line-height: 1.8;
+  padding: 0 60px;
+  text-align: center;
+}
+
+.company__image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.company__image div {
+  width: 70%;
+  height: 45vh;
+  background-image: url("../../images/imaes-vision.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.company__introduce {
+  width: 100%;
+  padding: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.company__introduce-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.company__introduce-card:nth-child(n + 4) {
+  margin-top: 100px;
+}
+
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__image {
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    object-position: 50% 50%;
+  }
+}
+
+.card__name,
+.card__title,
+.card__introduce {
+  padding: 10px 0;
+  width: 100%;
+  text-align: left;
+}
+
+.card__title {
+  padding: 3px 0;
+  font-size: 18px;
+  color: $imaes-dark-color;
+  border-bottom: $imaes-gray-border;
+}
+
+.card__name {
+  font-size: 22px;
+}
+
+.card__introduce {
+  font-size: 16px;
+}
+
+.company-big-container:last-child {
+  flex-grow: 1;
+  background-color: black;
+
+  .company__title {
+    color: $imaes-color;
+  }
+
+  .company__sub {
+    color: white;
+  }
+
+  .company-history-container {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    box-sizing: border-box;
+    padding-top: 100px;
+  }
+}
+
+.company-history {
+  grid-column: 1;
+  color: $imaes-dark-color;
+  font-size: 30px;
+  text-align: center;
+}
+
+.history-rows {
+  grid-column: 2;
+  display: flex;
+
+  .month {
+    font-size: 28px;
+    display: block;
+    color: rgb(173, 173, 173);
+    padding: 0px 100px;
+  }
+
+  .description {
+    font-size: 26px;
+    color: white;
+    display: block;
+  }
+}

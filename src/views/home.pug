@@ -1,0 +1,71 @@
+extends base
+block content
+    main.home
+        div.first-block
+            .home-header__main
+                div
+                    | 에너지 예측을 통해
+                    br
+                    | 더 풍요로운 세상을 만들어 갑니다.
+                .home-header__sub
+                    | 에너지 예측을 통해 변화에 앞서가며, 더 나은 세상을 위한 토대를 다져갑니다.
+                .scroll-down-btn
+                    i.fa-solid.fa-chevron-down
+
+        div.second-block
+            .solution-header
+                .solution-header__title The future is in Energy
+                .solution-header__content 지속 가능한 미래를 위해 에너지 솔루션을 만들어 갑니다.
+            a(href="/energy/elec/e1" target ="_self").solution-box.first
+                img(src="../../../images/imaes-electricity.jpg" alt="electricity").solution-content__image
+                .solution-content__title 전력 예측
+                .solution-content__content 전력 예측을 통해 보다 나은 세상을 만드는데 일조하고 있습니다.
+            a(href="/energy/gas/g1" target="_self").solution-box.second
+                img(src="../../../images/imaes-lng.jpg" alt="lng").solution-content__image
+                .solution-content__title 천연가스 예측
+                .solution-content__content 천연가스 예측을 통해 보다 나은 세상을 만드는데 일조하고 있습니다.
+            a(href="/energy/commodity/c1" target="_self").solution-box.third
+                img(src="../../../images/imaes-oil.jpg" alt="oil").solution-content__image
+                .solution-content__title 유가 예측
+                .solution-content__content 유가 예측을 통해 보다 나은 세상을 만드는데 일조하고 있습니다.
+        div.third-block
+            .explain.explain-first
+                img(src="../../../images/imaes-wind-turbine.jpg" alt="explain-target")
+            .explain.explain-second
+                .explain__title 전력, 가스 및 유가 예측 솔루션
+                .explain__content
+                    span 계량경제학 및 머신러닝 방법론을 이용하여 전력, 가스 및 유가 예측을 진행하고 있습니다.
+                    br
+                    span 장기 및 단기 예측 솔루션의 구축을 통해 고객의 안정적인 사업 영위를 지원하는 동시에
+                    br
+                    span 더 나은 미래를 향해 함께 나아가는 파트너가 되고자 합니다.
+                .btn
+                    a(href="/energy") 자세히 보기
+            .explain.explain-third
+                .explain__title.right-align 전력, 가스 및 유가 예측 솔루션
+                .explain__content.right-align
+                    span 계량경제학 및 머신러닝 방법론을 이용하여 전력, 가스 및 유가 예측을 진행하고 있습니다.
+                    br
+                    span 장기 및 단기 예측 솔루션의 구축을 통해 고객의 안정적인 사업 영위를 지원하는 동시에
+                    br
+                    span 더 나은 미래를 향해 함께 나아가는 파트너가 되고자 합니다.
+                .btn.right-align
+                    a(href="/company") 자세히 보기
+            .explain.explain-fourth
+                img(src="../../../images/imaes-about-us.jpg" alt="explain-about-us")
+        div.fourth-block
+            .fourth-block__left
+            .fourth-block__right
+                p.contact-title 한줄로 요약할 타이틀과
+                p.contact-content
+                    | 내용을
+                    br
+                    | 같이
+                    br
+                    | 고민해주세요
+                .btn
+                    a(href="/contact") Contact Us
+
+
+block scripts
+    script(type="module" src="/client/js/views/home.js")

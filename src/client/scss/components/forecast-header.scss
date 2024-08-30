@@ -1,0 +1,35 @@
+.forecast__header {
+  height: 100px;
+
+  padding: $title-padding;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  &.forecast-main::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: #3d3c3c;
+    transform: translateY(-50px);
+  }
+}
+
+.forecast__header h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.forecast__header h3 {
+  color: white;
+  font-size: 22px;
+  margin-top: 30px;
+  line-height: 1.6;
+  text-align: center;
+}

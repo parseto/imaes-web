@@ -1,0 +1,64 @@
+.energy {
+  min-height: calc(120vh - 5rem);
+}
+
+.products {
+  // border: 3px white solid;
+  color: white;
+  display: grid;
+  margin: 40px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.products__image:nth-child(2n + 1) {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 100px;
+}
+
+.products__image:nth-child(2n) {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 100px;
+}
+
+.products__image img {
+  border-radius: 20px;
+}
+
+.products__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.products__text:nth-child(2n + 1) {
+  align-items: flex-end;
+}
+
+.products__text:nth-child(2n) {
+  align-items: flex-start;
+}
+
+.products__title,
+.products__content {
+  display: block;
+  border: 3px solid white;
+}
+
+.products__title {
+  margin: 36px 0;
+  //   width: 20%;
+  color: $imaes-color;
+  font-size: 48px;
+}
+
+.products__content {
+  line-height: 2;
+  font-size: 24px;
+}
+
+.btn {
+  margin-top: 30px;
+}

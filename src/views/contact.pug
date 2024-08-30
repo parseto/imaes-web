@@ -1,0 +1,41 @@
+extends base
+block content
+    main.contact
+        .main__header
+            h2 문의하기
+            h3.sub__header
+                | 솔루션 이용 및 프로젝트 의뢰 등
+                br
+                | 에너지와 관련한 내용이면 무엇이든 문의해주세요.
+
+        .contact-form-wrapper
+            .contact-form
+                form(method="POST" id="contactForm")
+                    .contact-form__info
+                        .form-column
+                            input(id="name", name="name", type="text", placeholder="성함 또는 회사명")
+                        .form-column
+                            input(id="email", name="email", type="text", placeholder="이메일 주소")
+                    .contact-form__query
+                        textarea(id="query", name="query", type="text", placeholder="문의 내용")
+                    .contact-agree
+                        input(id="agree", name="agree", type="checkbox") 
+                        label(for="agree") 개인정보 수집 및 이용 동의 (필수)
+                    .contact-btn
+                        button(type="submit", id="submitBtn")
+                            | 문의하기
+
+block scripts
+    script(type="module" src="/client/js/views/contact.js")
+
+    if errorMessage
+        script.
+            window.errorMessage = "#{errorMessage}"
+
+    if successMessage
+        script.
+            window.successMessage = "#{successMessage}"
+
+    // [수정사항]
+    // 1. 문의하기를 누른 경우에 "문의가 잘되었다" 라는 알림이 뜨는 버튼이 떠서 사용자에게 안내를 해야 함.
+    // 2. 개인정보 선택의 내용을 넣어야할 것으로 보임.

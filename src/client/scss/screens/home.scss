@@ -1,0 +1,22 @@
+.home {
+  min-height: calc(320vh - 5rem);
+}
+
+.first-block,
+.second-block,
+.third-block,
+.fourth-block {
+  box-sizing: border-box;
+}
+
+//first-block
+@import "./screens-component/home-first-block.scss";
+
+// second-block
+@import "./screens-component/home-second-block.scss";
+
+// third-block
+@import "./screens-component/home-third-block.scss";
+
+// fourth-block
+@import "./screens-component/home-fourth-block.scss";

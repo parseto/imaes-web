@@ -1,0 +1,15 @@
+.scroll-down-btn {
+  font-size: 32px;
+  margin-top: 50px;
+  border: 3px solid white;
+  border-radius: 30%;
+  color: white;
+  text-align: center;
+  transition: background-color 0.1s ease, border 0.1s ease;
+
+  &:hover {
+    background-color: $imaes-dark-color;
+    border: 3px solid $imaes-dark-color;
+    cursor: pointer;
+  }
+}
